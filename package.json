@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "homepage": "https://create-react-app-redux.now.sh",
+  "scripts": {
+    "deploy": "now && now alias",
+    "start": "react-scripts start",
+    "now-start": "serve -s ./build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "precommit": "pretty-quick --staged"
+  },
+  "devDependencies": {
+    "prettier": "2.1.2",
+    "react-scripts": "2.1.8"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "clsx": "^1.1.1",
+    "connected-react-router": "4.5.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-redux": "5.1.2",
+    "react-router": "4.4.0-beta.8",
+    "react-router-dom": "4.4.0-beta.8",
+    "redux": "4.0.5",
+    "redux-thunk": "2.3.0",
+    "sanitize.css": "11.0.1",
+    "serve": "10.1.2"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
