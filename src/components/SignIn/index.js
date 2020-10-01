@@ -15,10 +15,12 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined'
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
+import Logo from '../Logo';
+import { FormatSize } from '../../../node_modules/@material-ui/icons/index'
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(6),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -34,6 +36,13 @@ const useStyles = makeStyles((theme) => ({
   submit: {
     margin: theme.spacing(3, 0, 2),
   },
+  logo : {
+    marginBottom: theme.spacing(3),
+  },
+  dialogTitle :{
+    fontSize:34,
+    fontWeight:700
+  }
 }))
 
 export default function SignInDialog(props) {
@@ -44,17 +53,16 @@ export default function SignInDialog(props) {
         open={props.open}
         onClose={props.handleClose}
         aria-labelledby="form-dialog-title">
-        <DialogTitle id="form-dialog-title">Login</DialogTitle>
+        <DialogTitle id="form-dialog-title" className={classes.dialogTitle}>Login</DialogTitle>
         <DialogContent>
           <Container component="main" maxWidth="xs">
             <CssBaseline />
             <div className={classes.paper}>
-              <Avatar className={classes.avatar}>
+              {/* <Avatar className={classes.avatar}>
                 <LockOutlinedIcon />
-              </Avatar>
-              <Typography component="h1" variant="h5">
-                Sign in
-              </Typography>
+                
+              </Avatar> */}
+              <Logo width="200px" className={classes.logo}></Logo>
               <form className={classes.form} noValidate>
                 <TextField
                   variant="outlined"

@@ -2,6 +2,7 @@ import React from 'react';
 // import { Route } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core';
 import TopBar from './TopBar';
+import CustomChatbot from '../components/chatbot';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,7 +32,9 @@ const useStyles = makeStyles((theme) => ({
 
 const MainLayout = () => {
   const classes = useStyles();
-
+  const clickEventHandler =(res)=>{
+    console.log(res);
+  }
   return (
     <div className={classes.root}>
       <TopBar />
@@ -42,6 +45,7 @@ const MainLayout = () => {
           </div>
         </div>
       </div>
+      <CustomChatbot eventHandler={clickEventHandler} />
     </div>
   );
 
