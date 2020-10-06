@@ -1,8 +1,9 @@
 import React from 'react';
-// import { Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core';
-import TopBar from './TopBar';
-import CustomChatbot from '../components/chatbot';
+import Header from '../containers/Header/index';
+import CustomChatbot from '../components/Chatbot';
+import PlayPage from '../pages/Play';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,11 +38,11 @@ const MainLayout = () => {
   }
   return (
     <div className={classes.root}>
-      <TopBar />
+      <Header />
       <div className={classes.wrapper}>
         <div className={classes.contentContainer}>
           <div className={classes.content}>
-            <h1>Hi This is Maksim Damaskin</h1>
+            <Route path="/" exact component={PlayPage}></Route>
           </div>
         </div>
       </div>

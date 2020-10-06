@@ -17,8 +17,10 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
+    "axios": "^0.20.0",
     "clsx": "^1.1.1",
     "connected-react-router": "4.5.0",
+    "formik": "^2.1.7",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-perfect-scrollbar": "^1.5.8",
@@ -26,11 +28,13 @@
     "react-router": "4.4.0-beta.8",
     "react-router-dom": "4.4.0-beta.8",
     "react-simple-chatbot": "^0.6.1",
+    "react-swipeable-views": "^0.13.9",
     "redux": "4.0.5",
     "redux-thunk": "2.3.0",
     "sanitize.css": "11.0.1",
     "serve": "10.1.2",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.2.0",
+    "yup": "^0.29.3"
   },
   "browserslist": [
     ">0.2%",

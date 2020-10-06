@@ -3,11 +3,11 @@ import { Link as RouterLink } from 'react-router-dom'
 import clsx from 'clsx'
 import PropTypes from 'prop-types'
 import { AppBar, Toolbar, makeStyles } from '@material-ui/core'
-import Logo from '../components/Logo'
+import Logo from '../../components/Logo'
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
-import SignInDialog from "../components/SignIn"
-import SignUpDialog from "../components/SignUp"
+import SignInDialog from "../SignIn"
+import SignUpDialog from "../SignUp"
 
 const useStyles = makeStyles((theme) => ({
   root: { flexGrow: 1 },
